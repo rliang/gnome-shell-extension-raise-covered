@@ -17,12 +17,12 @@ function windowIsNormal(win) {
   return win.window_type === Meta.WindowType.NORMAL;
 }
 
-function windowPlace(win) {
-  let {x, y, width, height} = win.get_work_area_current_monitor();
-  width -= 2 * (x += 0.3 * width);
-  height -= 2 * (y += 0.2 * height);
-  win.move_resize_frame(false, x, y, width, height);
-}
+//function windowPlace(win) {
+//  let {x, y, width, height} = win.get_work_area_current_monitor();
+//  width -= 2 * (x += 0.3 * width);
+//  height -= 2 * (y += 0.2 * height);
+//  win.move_resize_frame(false, x, y, width, height);
+//}
 
 function workspaceTopWindows(ws) {
   let tops = [];
@@ -53,8 +53,8 @@ function workspaceCheck(ws) {
     w.raise();
     let rect = w.get_frame_rect();
     let ints = tops.map(t => t.get_frame_rect().intersect(rect)[1]);
-    if (ints.some(int => int.area() > rect.area() * 0.5))
-      windowPlace(w);
+//    if (ints.some(int => int.area() > rect.area() * 0.5))
+//      windowPlace(w);
   }
 }
 
