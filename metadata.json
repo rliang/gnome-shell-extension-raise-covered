@@ -1,7 +1,7 @@
 {
   "name": "Raise Covered",
-  "uuid": "raisecovered@rliang.github.com",
+  "uuid": "raisecovered@stove-panini.github.com",
   "description": "Automatically raises windows covered by maximized ones.",
-  "url": "https://github.com/rliang/gnome-shell-extension-raise-covered",
+  "url": "https://github.com/stove-panini/gnome-shell-extension-raise-covered",
   "shell-version": ["3.14", "3.16", "3.18", "3.20", "3.22", "3.24"]
 }
