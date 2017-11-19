@@ -22,7 +22,7 @@ let _handles_wm = [];
 function enable() {
   _handles_sc = ['workspace-switched', 'restacked']
     .map(s => global.screen.connect(s, () => Meta.later_add(0, check)));
-  _handles_wm = ['map', 'size-change', 'size-changed']
+  _handles_wm = ['size-change', 'size-changed']
     .map(s => global.window_manager.connect(s, () => Meta.later_add(0, check)));
 }
 
